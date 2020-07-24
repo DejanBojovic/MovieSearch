@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieSearch</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Movie Search</h1>
+    <!-- div that gets the user input -->
+    <div class="input-div">
+        <!-- input -->
+        <input type="text" placeholder="Enter here" class="input-field">
+        <!-- button that makes AJAX call with user's input -->
+        <button type="button" class="button-get">Search</button>
+        <!-- button that removes movie from the page -->
+        <button type="button" class="button-remove">Remove All</button>
+    </div>
+
+    <!-- placeholder for the info gotten from AJAX -->
+    <div class="data-show">
+        <!-- this is the skeleton of what will be displayed in this div, and on the page -->
+        <!-- 
+        <div class="main">
+            <div class="main-left">
+                <h1 class="title">${dt.Title}</h1>
+                <img src="${dt.Poster}" alt="${dt.Title}-movie-poster">
+                <p class="movie-genre">Genre: ${dt.Genre}</p>
+                <p class="movie-release">Release Date: ${dt.Released}</p>
+            </div>
+            <div class="main-right">
+                <div class="rating-div">
+                    <p>IMDb rating</p>
+                    <p class="rating-number">${dt.imdbRating}</p>
+                </div>
+                <p class="director">Director: ${dt.Director}</p>
+                <p class="actors">Actors: ${dt.Actors}</p>
+                <p class="movie-plot">Plot: ${dt.Plot}</p>
+            </div>
+            <div class="remove">x</div>
+        </div> -->
+
+    </div>
+    <div class="wrong-title-div">
+        <p>Wrong movie title!</p>
+        <p>Try something else!</p>
+        <button class="btn-wrong-title">Fine</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
