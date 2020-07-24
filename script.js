@@ -38,7 +38,7 @@ buttonGET.addEventListener("click", function() {
         // it specifies what exactly to do with this gotten info
         ourRequest.onload = function() {
             // since we get the info in JSON format we first need to parse it into usable code (arrays and objects)
-            var data = JSON.parse(ourRequest.responseText);
+            const data = JSON.parse(ourRequest.responseText);
 
             // if user searches for the wront movie title call "wrongtitleDisplay" function
             if(data.Response === "False") {
@@ -77,7 +77,7 @@ buttonREMOVE.addEventListener("click", function() {
 function appendHTML(dt) {
     // using template literals to form a string which contains info from the gotten data
     // creating "HTML like" string
-    let htmlString = 
+    const htmlString = 
     `
     <div class="main">
         <div class="main-left">
