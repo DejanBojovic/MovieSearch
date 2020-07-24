@@ -1,5 +1,5 @@
 // new istance of XMLHttpRequest object that contains needed methods for AJAX call
-var ourRequest = new XMLHttpRequest();
+const ourRequest = new XMLHttpRequest();
 
 // selecting the button that makes the AJAX call
 const buttonGET = document.querySelector(".button-get");
