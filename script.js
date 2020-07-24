@@ -32,7 +32,7 @@ buttonGET.addEventListener("click", function() {
         // input that we've got from the input field is being added into the URL as the parameter
         // we only need information for that specific movie or series and that is why we need this parameter to get its specific info
         // function has two arguments - type of call you want to make and url from which you want to ,in this case, get the info
-        ourRequest.open("GET", `http://www.omdbapi.com/?t=${gottenInput}&apikey=611d749b`);
+        ourRequest.open("GET", `https://www.omdbapi.com/?t=${gottenInput}&apikey=611d749b`);
 
         // function that is invoked once the info has been fetched form the URL in "open" method
         // it specifies what exactly to do with this gotten info
