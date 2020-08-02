@@ -1,4 +1,4 @@
-// new istance of XMLHttpRequest object that contains needed methods for AJAX call
+// new instance of XMLHttpRequest class that contains needed methods for AJAX call
 const ourRequest = new XMLHttpRequest();
 
 // selecting the button that makes the AJAX call
